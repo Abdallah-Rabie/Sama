@@ -31,13 +31,13 @@ export default function Home() {
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={1}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          navigation
-          pagination={{ clickable: true }}
+          // navigation
+          // pagination={{ clickable: true }}
         >
           <SwiperSlide>
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
