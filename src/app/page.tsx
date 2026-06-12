@@ -87,7 +87,7 @@ export default function Home() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="relative w-full h-[200px] sm:h-[350px] md:h-[500px]">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[600px]">
               <Image
                 src={logo10}
                 alt="logo10"
