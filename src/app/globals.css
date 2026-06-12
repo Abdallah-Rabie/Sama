@@ -57,11 +57,11 @@
 }
 
 .nav-link:hover {
-  background-color: blue;
+  background-color: #e8ad38;
 }
 
 .nav-active {
-  background-color: blue;
+  background-color: #e8ad38;
   color: white;
   padding: 6px 10px;
   border-radius: 6px;
