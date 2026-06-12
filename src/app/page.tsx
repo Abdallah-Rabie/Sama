@@ -19,6 +19,7 @@ import logo6 from "../../public/1711028293.jpg";
 import logo7 from "../../public/1757922364.jpg";
 import logo8 from "../../public/1757769421.jpg";
 import logo9 from "../../public/1726026550.jpeg";
+import logo10 from "../../public/main_logo.jpeg";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -84,6 +85,17 @@ export default function Home() {
               />
             </div>
           </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="relative w-full h-[200px] sm:h-[350px] md:h-[500px]">
+              <Image
+                src={logo10}
+                alt="logo10"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
 
@@ -114,12 +126,12 @@ export default function Home() {
           {/* STATS */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-4 ">
 
-            <div className=" p-4 rounded-lg">
-      <h2 className="text-2xl font-bold ">
-        {count}+
-      </h2>
+            <div className="p-4 rounded-lg">
+          <h2 className="text-2xl font-bold">
+            {count}+
+          </h2>
 
-      <p className=" font-bold ">
+      <p className="font-bold">
         Years of giving
       </p>
     </div>
