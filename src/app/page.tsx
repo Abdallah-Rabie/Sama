@@ -114,7 +114,7 @@ export default function Home() {
           {/* STATS */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-4 ">
 
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
+            <div className="group hover:b transition duration-300 p-4 rounded-lg">
       <h2 className="text-2xl font-bold group-hover:text-white transition duration-300">
         {count}+
       </h2>
