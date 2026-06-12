@@ -29,7 +29,7 @@ export default function Home() {
       <div className="w-full">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
-          spaceBetween={1}
+          // spaceBetween={1}
           slidesPerView={1}
           autoplay={{
             delay: 2500,

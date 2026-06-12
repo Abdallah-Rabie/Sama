@@ -49,14 +49,24 @@
 }
 
 .nav-link {
- color: black;
+  background-color: green;
   transition: 0.3s;
   padding: 6px 10px;
   border-radius: 6px;
+  display: inline-block;
 }
 
 .nav-link:hover {
-  color: black; 
+  background-color: blue;
+}
+
+.nav-active {
+  background-color: blue;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 @layer base {
