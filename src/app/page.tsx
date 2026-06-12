@@ -156,7 +156,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
     {/* CARD 1 */}
-  <Link href={"/medical-divisions"} className="block rounded-xl overflow-hidden">
+  <Link href={"/military-divisions"} className="block rounded-xl overflow-hidden">
 
    <div className="relative h-[250px]">
      <Image
@@ -177,7 +177,7 @@ export default function Home() {
   </Link>
 
   {/* CARD 2 */}
-  <Link href={"/military-divisions"} className="block  rounded-xl overflow-hidden">
+  <Link href={"/medical-divisions"} className="block  rounded-xl overflow-hidden">
 
     <div className="relative h-[250px]">
       
