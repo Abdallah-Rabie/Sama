@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[600px]">
               <Image
                 src={logo10}
@@ -95,7 +95,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
 
@@ -105,8 +105,8 @@ export default function Home() {
         {/* IMAGE */}
         <div className="w-full lg:w-4/12 h-75 sm:h-100 lg:h-125 relative">
           <Image
-            src={logoo}
-            alt="logo"
+            src={logo10}
+            alt="logo10"
             fill
             className="object-cover rounded-xl"
           />
