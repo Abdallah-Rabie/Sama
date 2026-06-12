@@ -66,17 +66,6 @@ export default function Home() {
 
 
           <SwiperSlide>
-  <div className="relative w-full h-[350px] sm:h-[450px] md:h-[800px]">
-    <Image
-      src={logo10}
-      alt="logo10"
-      fill
-      className="object-contain"
-    />
-  </div>
-</SwiperSlide>
-
-          <SwiperSlide>
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
               <Image
                 src={logo}
