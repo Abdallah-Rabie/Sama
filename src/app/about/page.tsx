@@ -10,23 +10,28 @@ import logo4 from "../../../public/logo4.png";
 import Image from 'next/image';
 import SwiperAbout from '../_components/SwiperAbout/SwiperAbou';
 import Link from 'next/link';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function page() {
+  const { t } = useLanguage();
+
   return (
 <>
 
  <div className="relative w-full lg:w- h-30 relative">
           <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
            <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-    About Sama
+    {t.about.pageTitle}
   </h2>  
         </div>
 
 <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400">
-  <Link href={"/"}>HOME</Link>
+  <Link href={"/"}>
+    {t.about.breadcrumbHome}
+  </Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  About Sama
+  {t.about.breadcrumbAbout}
 </Link>
 </div>
 
@@ -38,11 +43,11 @@ export default function page() {
       <div className="w-[90%] mx-auto flex gap-5  p-5 rounded-xl">
 
         <div className="hidden sm:flex w-4/12 gap-3 flex-col">
-        <h3>President’s Message</h3>
-        <h3>Company History</h3>
-        <h3>Values of Sama</h3>
-        <h3>Quality and Productivity</h3>
-        <h3>Environment and Sustainability</h3>
+        <h3>{t.about.menuPresidentsMessage}</h3>
+        <h3>{t.about.menuCompanyHistory}</h3>
+        <h3>{t.about.menuValues}</h3>
+        <h3>{t.about.menuQuality}</h3>
+        <h3>{t.about.menuEnvironment}</h3>
       </div>
 
       <div className="w-full sm:w-8/12">

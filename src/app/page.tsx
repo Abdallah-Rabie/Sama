@@ -21,8 +21,11 @@ import logo8 from "../../public/1757769421.jpg";
 import logo9 from "../../public/1726026550.jpeg";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* SLIDER */}
@@ -81,17 +84,11 @@ export default function Home() {
         <div className="w-full lg:w-8/12 flex flex-col gap-5">
 
           <h1 className="text-[32px] font-bold ">
-            About Sama
+            {t.home.aboutTitle}
           </h1>
 
           <p className="text-[14px] sm:text-[16px] font-normal">
-            As a construction group founded in 1990, we have witnessed
-            remarkable growth over the years, expanding and diversifying our
-            operations across various sectors. Through strategic growth
-            initiatives, our group provides services in civil, urban,
-            industrial, commercial, military, and medical sectors. Our
-            dedication to achieving excellence and proactivity is clearly
-            embodied in our evolutionary journey.
+            {t.home.aboutDescription}
           </p>
 
           {/* STATS */}
