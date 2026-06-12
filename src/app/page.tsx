@@ -114,12 +114,12 @@ export default function Home() {
           {/* STATS */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-4 ">
 
-            <div className="group  transition duration-300 p-4 rounded-lg">
-      <h2 className="text-2xl font-bold group-hover:text-white transition duration-300">
+            <div className=" p-4 rounded-lg">
+      <h2 className="text-2xl font-bold ">
         {count}+
       </h2>
 
-      <p className="group-hover:text-white font-bold transition duration-300">
+      <p className=" font-bold ">
         Years of giving
       </p>
     </div>
