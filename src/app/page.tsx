@@ -22,30 +22,9 @@ import logo9 from "../../public/1726026550.jpeg";
 import logo10 from "../../public/main_logo.jpeg";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import Action, { Action1, Action2, Action3, Action4, Action5,} from "./_components/Action/Action";
 
-import { useEffect, useState } from "react";
 export default function Home() {
-
-
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const end = 50;
-
-    const timer = setInterval(() => {
-      start += 1;
-
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(start);
-      }
-    }, 30);
-
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <>
@@ -96,7 +75,7 @@ export default function Home() {
       <div className="w-[90%] lg:w-[90%] mx-auto my-14 md:my-20 flex flex-col lg:flex-row items-start gap-10">
 
         {/* IMAGE */}
-        <div className="w-full lg:w-4/12 h-75 sm:h-100 lg:h-125 relative">
+        <div className="w-full lg:w-4/12 h-75 sm:h-300 lg:h-125 relative">
           <Image
             src={logo10}
             alt="logo10"
@@ -119,51 +98,24 @@ export default function Home() {
           {/* STATS */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-4 ">
 
-            <div className="p-4 rounded-lg">
-          <h2 className="text-2xl font-bold">
-            {count}+
-          </h2>
+            <Action/>
 
-      <p className="font-bold">
-        Years of giving
-      </p>
-    </div>
+              <Action1/>
 
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-              <h2 className="text-2xl font-bold  group-hover:text-white transition duration-300">12+</h2>
-              <p className="group-hover:text-white font-bold transition duration-300">
-                Sectors
-              </p>
-            </div>
+           <Action2/>
 
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-              <h2 className="text-2xl font-bold  group-hover:text-white transition duration-300">30+</h2>
-              <p className="group-hover:text-white font-bold transition duration-300">
-                Bridges and tunnels
-              </p>
-            </div>
-
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
+            <Action3/>  
+            {/* <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
               <h2 className="text-2xl font-bold  group-hover:text-white transition duration-300">1M+</h2>
               <p className="group-hover:text-white font-bold transition duration-300">
                 Km² paved streets
               </p>
-            </div>
+            </div> */}
 
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-              <h2 className="text-2xl font-bold group-hover:text-white transition duration-300">300+</h2>
-              <p className="group-hover:text-white font-bold transition duration-300">
-                Engineers
-              </p>
-            </div>
 
-            <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-              <h2 className="text-2xl font-bold group-hover:text-white transition duration-300">B 8.2</h2>
-              <p className="group-hover:text-white font-bold transition duration-300">
-                Projects value
-              </p>
-            </div>
-
+        
+          <Action4/>
+             <Action5/>   
           </div>
         </div>
 
