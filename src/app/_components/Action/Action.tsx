@@ -202,13 +202,14 @@ export  function Action4() {
 
 
 
+export default function Action5() {
 
-export function Action5() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
-     const end = 8.2;
+  const end = 8.2;
+
 
     const timer = setInterval(() => {
       start += 1;
@@ -223,19 +224,24 @@ export function Action5() {
 
     return () => clearInterval(timer);
   }, []);
-
   return (
-    <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-      <h2 className="text-2xl font-bold group-hover:text-white transition duration-300">
-        {count}+
-      </h2>
+   <>
+   
+           <div className="p-4 rounded-lg">
+          <h2 className="text-2xl font-bold">
+            {count}+
+          </h2>
 
-      <p className="group-hover:text-white font-bold transition duration-300">
-        Bridges and tunnels
+      <p className="font-bold">
+         Bridges and tunnels
       </p>
     </div>
-  );
+   
+   
+   </>
+  )
 }
+
 
 
 
