@@ -52,53 +52,53 @@ At Sama Holding, we deliver healthcare projects end-to-end—from planning and d
 
 <div className="w-[90%] mx-auto py-8 ">
 
-<p>
+<p className=" text-xl  font-normal my-5">
 Sama is a leader in the supply of healthcare services and the distribution of medical consumables, as well as all products related to dialysis and dental industries within the Kingdom of Saudi Arabia. It represents well-known global and local companies to distribute a wide range of products and provide healthcare providers with the latest solutions and technologies, along with high-quality services.
    </p>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-3">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-8 my-5">
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-lg'>
        Disposable consumables for dialysis <br/> procedures
         </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>UVital-Dura bicarbonate</p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'>UVital-Dura bicarbonate</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Dialysis</p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Dialysis</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Medical metro carts and emergency carts, and medicine distribution </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-lg'>Medical metro carts and emergency carts, and medicine distribution </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p> Laboratory and hospital furniture </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'> Laboratory and hospital furniture </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Spare parts for medical devices </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Spare parts for medical devices </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Haier medical refrigerators </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'>Haier medical refrigerators </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Medical products for individual use </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'>Medical products for individual use </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Dental products and consumables </p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'>Dental products and consumables </p>
     </div>
    </div>
 
-    <div className="bg-gray-200 p-4 w-full text-center border-2 border-black mt-4">
-      <p>Thermal cameras, autofocus cameras</p>
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className='text-xl'>Thermal cameras, autofocus cameras</p>
     </div>
 </div>
 

@@ -52,74 +52,77 @@ export default function page() {
 
 <div className="w-[90%] mx-auto py-8 ">
 
-<h3 className='text-black text-lg my-5'>Sama works in advanced military and security industries...</h3>
+<h3 className='text-black text-xl my-5'>Sama works in advanced military and security industries...</h3>
 
-<p>Sama operates in the field of advanced military and security industries,
-   offering a wide range of services and advanced technical solutions:
-   </p>
+<p className=" text-xl leading-6 font-normal my-5">
+  Sama operates in the field of advanced military and security industries,
+  offering a wide range of services and advanced technical solutions:
+</p>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-3">
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Countering unmanned aerial vehicles <br></br>
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-3">
+
+    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className="font-normal text-xl">Countering unmanned aerial vehicles
         (UAVs)
         </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Unmanned aerial vehicles (UAVs)</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Unmanned aerial vehicles (UAVs)</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Military training </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p className="font-normal text-xl">Military training </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Mine and explosive ordnance removal</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Mine and explosive ordnance removal</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Various military services</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Various military services</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Personal protective equipment</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Personal protective equipment</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Surveillance: Closed-circuit television<br/> (CCTV) cameras</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-lg'>Surveillance: Closed-circuit television<br/> (CCTV) cameras</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Fixed-focus Internet Protocol (IP) cameras</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-lg'>Fixed-focus Internet Protocol (IP) cameras</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Thermal cameras, autofocus cameras</p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-lg'>Thermal cameras, autofocus cameras</p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Video networks </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Video networks </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Electronic access control </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Electronic access control </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Facial recognition and biometric<br/> verification </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Facial recognition and biometric<br/> verification </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Operations center video wall, technical <br/>furniture </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Operations center video wall, technical <br/>furniture </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Intelligent traffic management </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Intelligent traffic management </p>
     </div>
 
-    <div className="bg-gray-200 p-4 text-center border-2 border-black">
-      <p>Site security - fencing, barriers </p>
+     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+      <p  className='text-xl'>Site security - fencing, barriers </p>
     </div>
 
 
