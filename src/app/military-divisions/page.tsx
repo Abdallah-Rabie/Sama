@@ -31,18 +31,23 @@ export default function page() {
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
     {/* TEXT */}
-    <div className='bg-gray-100 h-[400px] p-2'>
+    <div className='bg-gray-100 h-full p-4'>
       <h2 className="text-3xl font-normal mb-4"> Military divisions </h2>
 
-      <p className="leading-6 font-normal">
+      <p className="font-normal text-lg">
        At Sama Holding, we deliver end-to-end solutions for defense facilities and mission-critical infrastructure—from planning and design to construction, commissioning, and operations—under strict safety and confidentiality. Our scope covers bases, training facilities, logistics depots, and C2 centers, alongside physical security, surveillance and access control, utilities (power, water, fuel), and redundant systems to ensure readiness and continuity. Multidisciplinary teams (civil/architectural/MEP/low-current & networks) integrate systems to deliver scalable, highly reliable outcomes. We focus on: Compliance with national/international standards and robust risk management. 24/7 readiness through redundancy, backup, and operational resilience. Information and systems security with controlled access and continuous monitoring. Quality, safety, and on-time delivery by vetted teams for high-sensitivity sites.
       </p>
     </div>
 
     {/* IMAGE */}
-    <div className="relative w-full h-[400px]">
-      <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
-    </div>
+    <div className="relative w-full h-[250px] sm:h-full">
+  <Image
+    src={logoo}
+    alt="logo"
+    fill
+    className="object-cover rounded-xl"
+  />
+</div>
 
   </div>
 

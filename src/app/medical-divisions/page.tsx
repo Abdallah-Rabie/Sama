@@ -31,15 +31,15 @@ export default function page() {
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
     {/* TEXT */}
-    <div className="bg-gray-100 h-[400px] p-4 w-full overflow-hidden">
+    <div className='bg-gray-100 h-full p-4'>
       <h2 className="text-3xl font-normal mb-4">Medical divisions</h2>
 
-        <p className="leading-6 font-normal break-words text-sm md:text-base">
+        <p className=" font-normal break-words text-lg">
 At Sama Holding, we deliver healthcare projects end-to-end—from planning and design to construction, commissioning, and operations—prioritizing patient safety, operational efficiency, and regulatory compliance. We work across hospitals, specialty centers, clinics, laboratories, and pharmacies, integrating medical and engineering systems for high readiness and service continuity. We focus on: Evidence-based clinical flows (patient/staff/supply), infection control, and sterile zones. Specialized systems: medical gas networks, high-spec HVAC, operating and isolation rooms, imaging suites, clean rooms. Smart and low-current systems: nurse call, surveillance, BMS, and integration with HIS/PACS/LIS and data networks. Thorough commissioning, O&M plans, and technical support. Compliance with national and international standards (MoH, SFDA, NFPA, HTM) plus sustainability and energy efficiency.</p>
     </div>
 
     {/* IMAGE */}
-    <div className="relative w-full h-[400px]">
+    <div className="relative w-full h-[250px] sm:h-full">
       <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
     </div>
 
