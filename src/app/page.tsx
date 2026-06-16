@@ -32,20 +32,37 @@ export default function Home() {
       <div className="w-full">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
-          // spaceBetween={1}
+          spaceBetween={1}
           slidesPerView={1}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{ delay: 2500, disableOnInteraction: false,}}
           loop={true}
-          // navigation
+          navigation={true}
           // pagination={{ clickable: true }}
         >
 
 
           <SwiperSlide>
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
+              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] rounded-2xl overflow-hidden mx-auto">
+    
+              <video
+                src="/Saudi Arabia.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                className="w-full h-full object-cover rounded-2xl"
+              />
+
+         <div className="absolute inset-0 bg-black/70 pointer-events-none"></div>
+        </div>
+          </SwiperSlide>
+
+
+
+
+          <SwiperSlide>
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] ">
               <Image
                 src={logo}
                 alt="logo"
