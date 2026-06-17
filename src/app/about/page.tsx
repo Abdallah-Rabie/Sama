@@ -15,7 +15,7 @@ export default function page() {
   return (
 <>
 
- <div className="relative w-full lg:w- h-30 relative">
+ <div className="relative w-full lg:w- h-30 relative mt-20">
           <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
            <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
     About Sama

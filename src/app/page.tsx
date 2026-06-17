@@ -36,13 +36,13 @@ export default function Home() {
           slidesPerView={1}
           // autoplay={{ delay: 2500, disableOnInteraction: false,}}
           loop={true}
-          navigation={true}
-          // pagination={{ clickable: true }}
+          // navigation={true}
+          pagination={{ clickable: true }}
         >
 
 
           <SwiperSlide>
-              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] rounded-2xl overflow-hidden mx-auto">
+             <div className="relative w-full sm:h-screen h-[350px]">
     
               <video
                 src="/Saudi Arabia.mp4"
@@ -62,7 +62,7 @@ export default function Home() {
 
 
           <SwiperSlide>
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] ">
+              <div className="relative w-full sm:h-screen h-[350px]">
               <Image
                 src={logo}
                 alt="logo"
@@ -74,7 +74,7 @@ export default function Home() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
+                 <div className="relative w-full sm:h-screen h-[350px]">
               <Image
                 src={logoo}
                 alt="logoo"

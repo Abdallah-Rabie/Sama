@@ -10,7 +10,7 @@ export default function Page() {
   return (
    <>
    
-    <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400">
+    <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400  mt-20">
   <Link href={"/"}>HOME</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">

@@ -7,7 +7,7 @@ export default function page() {
 
     <>
     
-    <div className="relative w-full lg:w- h-30">
+    <div className="relative w-full lg:w- h-30 mt-20">
               <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
     
      <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">

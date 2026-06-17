@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-   <div className="w-full bg-white fixed top-0 left-0 z-50">
+<div className="w-full absolute  top-0 left-0 z-50 bg-transparent">
 
      <div className="w-[90%] mx-auto h-16 flex items-center justify-between">
       
@@ -44,7 +44,7 @@ export default function Navbar() {
           <NavigationMenuList className="hidden lg:flex gap-4">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/" className={pathname === "/" ? "nav-active" : "nav-link"}>
+                <Link href="/" className={pathname === "/" ? "nav-active" :""}>
                   Home
                 </Link>
               </NavigationMenuLink>
