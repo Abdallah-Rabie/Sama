@@ -1,9 +1,15 @@
+"use client";
+
 import React from 'react'
 import logoo from "../../../public/1757673063.jpg";
 import logo from "../../../public/IMG-20231220-WA0006.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
+
 export default function page() {
+  const { lang } = useLanguage();
   return (
 <>
 
@@ -29,16 +35,9 @@ export default function page() {
 
     {/* TEXT */}
     <div>
-      <h2 className="text-3xl font-bold mb-4">
-        Careers
-      </h2>
+      <h2 className="text-3xl font-bold mb-4">{t("careers.title", lang)}</h2>
 
-      <p className=" leading-8">
-        At Sama Holding, we believe that our people are the foundation of
-        our success. We are committed to attracting top talent and fostering
-        an inspiring work environment that supports professional growth and
-        development.
-      </p>
+      <p className=" leading-8">{t("careers.description", lang)}</p>
     </div>
 
     {/* IMAGES */}

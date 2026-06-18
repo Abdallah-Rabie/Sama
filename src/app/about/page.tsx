@@ -1,6 +1,8 @@
-
+"use client"
 
 import React from 'react'
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 import logoo from "../../../public/1757750688.jpg";
 import logo from "../../../public/2.png";
 import logo1 from "../../../public/logo1.png";
@@ -11,6 +13,7 @@ import Image from 'next/image';
 import SwiperAbout from '../_components/SwiperAbout/SwiperAbou';
 import Link from 'next/link';
 export default function page() {
+  const { lang } = useLanguage();
 
   return (
 <>
@@ -18,17 +21,17 @@ export default function page() {
  <div className="relative w-full lg:w- h-30 relative mt-20">
           <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
            <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-    About Sama
+    {t("breadcrumb.about", lang)}
   </h2>  
         </div>
 
 <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400">
   <Link href={"/"}>
-    HOME
+    {t("careers.home", lang)}
   </Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  About Sama
+  {t("breadcrumb.about", lang)}
 </Link>
 </div>
 
@@ -40,28 +43,28 @@ export default function page() {
       <div className="w-[90%] mx-auto flex gap-5  p-5 rounded-xl">
 
         <div className="hidden sm:flex w-4/12 gap-3 flex-col">
-        <h3>President’s Message</h3>
-        <h3>Company History</h3>
-        <h3>Values of Sama</h3>
-        <h3>Quality and Productivity</h3>
-        <h3>Environment and Sustainability</h3>
+        <h3>{t("sidebar.presidentMessage", lang)}</h3>
+        <h3>{t("sidebar.companyHistory", lang)}</h3>
+        <h3>{t("sidebar.valuesOfSama", lang)}</h3>
+        <h3>{t("sidebar.qualityProductivity", lang)}</h3>
+        <h3>{t("sidebar.environmentSustainability", lang)}</h3>
       </div>
 
       <div className="w-full sm:w-8/12">
-        <h1 className='my-3 font-normal text-black text-3xl'>President’s Message</h1>
-        <p>Thanks to the grace of God, Sama has taken distinguished steps throughout its long history towards achieving a unique and distinguished experience in military, civil, and other fields. We are committed to fundamental values that form the essence of our work: excellence, integrity, innovation, safety, quality, and speed of production. We work diligently to provide tailored and integrated solutions that meet the needs of every client, leveraging our rich experience to achieve this goal. We prioritize sustainability and continuous improvement while focusing on enhancing our performance and minimizing negative environmental impact. We are also committed to developing our team and empowering them to be an effective element in our journey towards success. As a united and harmonious team, we aspire to enhance our position as a leading company in all our areas of work,ensuring the achievement of the highest standards of quality and efficiency in all our projects and services</p>
+        <h1 className='my-3 font-normal text-black text-3xl'>{t("about.presidentMessage", lang)}</h1>
+        <p>{t("about.text1", lang)}</p>
 
-        <h2 className='my-7 text-xl font-normal text-black'>Chairman</h2>
+        <h2 className='my-7 text-xl font-normal text-black'>{t("about.chairman", lang)}</h2>
 
-        <h3 className='my-3 text-lg font-normal text-black'>Sultan bin Salman Saleem Al-Saadi</h3>
+        <h3 className='my-3 text-lg font-normal text-black'>{t("about.chairmanName", lang)}</h3>
         
         <div className="border-2 border-amber-700 mt-4 w-full"></div>
 
-        <h1 className='mt-5 text-3xl font-normal text-black'>Company History</h1>
+        <h1 className='mt-5 text-3xl font-normal text-black'>{t("about.companyHistory", lang)}</h1>
         
-        <p className='my-5 font-normal text-black'>Sama Group (Since 1990)</p>
+        <p className='my-5 font-normal text-black'>{t("about.samaGroup", lang)}</p>
 
-        <p>As a construction group established in 1990, we have witnessed significant growth over the years, expanding and diversifying our operations across various sectors. Through strategic growth initiatives, our group provides services in civil, structural, industrial, commercial, military, and medical sectors. Our dedication to achieving excellence and proactivity is clearly embodied in our evolutionary journey.</p>
+        <p>{t("about.text2", lang)}</p>
       </div>
       </div>
 
@@ -82,29 +85,24 @@ export default function page() {
   <div className="w-[90%] mx-auto absolute inset-0 text-white p-6 flex  justify-center gap-3 z-10">
 
      <div>
-    <h2 className="text-xl font-bold mb-2 text-center">Integrity</h2>
+    <h2 className="text-xl font-bold mb-2 text-center">{t("about.integrity", lang)}</h2>
     <p className="font-normal leading-7 line-clamp-2">
-      We conduct all our tasks with honesty and integrity,
-      so you can trust us.
+      {t("about.integrityText", lang)}
     </p>
   </div>
 
      <div>
-    <h2 className="text-xl font-bold mb-2 text-center">Uniqueness</h2>
+    <h2 className="text-xl font-bold mb-2 text-center">{t("about.uniqueness", lang)}</h2>
     <p className="font-normal leading-7 line-clamp-3">
-      Being a group operating in diverse fields, we need to excel
-      and innovate to stay ahead by providing comprehensive
-      solutions that meet needs.
+      {t("about.uniquenessText", lang)}
     </p>
   </div>
 
   
   <div>
-    <h2 className="text-xl font-bold mb-2 text-center">Moving Forward</h2>
+    <h2 className="text-xl font-bold mb-2 text-center">{t("about.movingForward", lang)}</h2>
     <p className="font-normal leading-7 line-clamp-3">
-      We believe in the necessity of continuous change and striving
-      for improvement and continuous learning to elevate standards
-      and achieve mutual benefit.
+      {t("about.movingForwardText", lang)}
     </p>
   </div>
 
@@ -122,23 +120,13 @@ export default function page() {
   {/* TEXT */}
   <div className="lg:w-1/2 w-full bg-gray-100 p-6 rounded-xl flex">
     <div>
-      <h2 className="text-3xl font-bold mb-4">Safety First</h2>
+      <h2 className="text-3xl font-bold mb-4">{t("about.safetyFirstSection", lang)}</h2>
 
-      <p className="leading-8 text-gray-700">
-        By the grace of God and extending Sama’s excellence,
-        we have achieved the best contractor award for the
-        Oxagon project in NEOM, where we secured 14 contracts,
-        marking a significant achievement with no severe injuries,
-        reflecting our ongoing commitment to safety.
+    <p className="leading-8 text-gray-700">
+  {t("about.safetyText", lang)}
+</p>
 
-        We have taken comprehensive measures in managing
-        occupational health and safety, with a workforce of about
-        25,875 people. We organized 1,877 introductory sessions
-        and conducted 224 inspections.
-
-        We achieved over 30,502,451 safe work hours, reflecting
-        our commitment to providing a safe working environment.
-      </p>
+</div>
     </div>
   </div>
 
@@ -261,7 +249,7 @@ export default function page() {
 
 <SwiperAbout/>
 
-    </div>
+    {/* </div> */}
 
 
 </>  )

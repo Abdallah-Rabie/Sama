@@ -1,9 +1,14 @@
+"use client";
+
 import React from 'react'
 import logoo from "../../../public/1757943743.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function page() {
+  const { lang } = useLanguage();
   return (
 <>
 
@@ -11,31 +16,31 @@ export default function page() {
           <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
 
  <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-    Military divisions
+    {t("nav.military", lang)}
   </h2>   
   </div>
 
 <div className="w-full flex items-start gap-2 px-4 md:px-16 my-5 text-gray-400">
-  <Link href={"/"}>HOME</Link>
+  <Link href={"/"}>{t("careers.home", lang)}</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-    Military divisions
+    {t("nav.military", lang)}
   </Link>
 </div>
 
 <div className="border border-amber-700"></div>
 
 
-<div className="w-[90%] mx-auto py-8">
+<div className="w-[90%] mx-auto py-8 mt-5">
 
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
     {/* TEXT */}
     <div className='bg-gray-100 h-full p-4'>
-      <h2 className="text-3xl font-normal mb-4"> Military divisions </h2>
+      <h2 className="text-3xl font-normal mb-4"> {t("military.title", lang)} </h2>
 
       <p className="font-normal text-lg">
-       At Sama Holding, we deliver end-to-end solutions for defense facilities and mission-critical infrastructure—from planning and design to construction, commissioning, and operations—under strict safety and confidentiality. Our scope covers bases, training facilities, logistics depots, and C2 centers, alongside physical security, surveillance and access control, utilities (power, water, fuel), and redundant systems to ensure readiness and continuity. Multidisciplinary teams (civil/architectural/MEP/low-current & networks) integrate systems to deliver scalable, highly reliable outcomes. We focus on: Compliance with national/international standards and robust risk management. 24/7 readiness through redundancy, backup, and operational resilience. Information and systems security with controlled access and continuous monitoring. Quality, safety, and on-time delivery by vetted teams for high-sensitivity sites.
+        {t("military.description", lang)}
       </p>
     </div>
 
@@ -55,13 +60,12 @@ export default function page() {
 
 
 
-<div className="w-[90%] mx-auto py-8 ">
+<div className="w-[90%] mx-auto py-8 bg-red-900 p-20">
 
-<h3 className='text-black text-xl my-5'>Sama works in advanced military and security industries...</h3>
+<h3 className='text-black text-xl my-5'>{t("military.services", lang)}</h3>
 
 <p className=" text-xl leading-6 font-normal my-5">
-  Sama operates in the field of advanced military and security industries,
-  offering a wide range of services and advanced technical solutions:
+  {t("military.services", lang)}
 </p>
 
 
@@ -69,34 +73,36 @@ export default function page() {
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-3">
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className="font-normal text-xl">Countering unmanned aerial vehicles
-        (UAVs)
+      <p className="font-normal text-xl">{t("military.uavCounter", lang)}
         </p>
     </div>
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Unmanned aerial vehicles (UAVs)</p>
+      <p  className='text-xl'>{t("military.uavCounter", lang)}</p>
     </div>
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className="font-normal text-xl">Military training </p>
+      <p className="font-normal text-xl">{t("military.training", lang)} </p>
     </div>
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Mine and explosive ordnance removal</p>
+      <p  className='text-xl'>{t("military.mineRemoval", lang)}</p>
     </div>
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Various military services</p>
+      <p  className='text-xl'>{t("military.servicesGeneral", lang)}</p>
     </div>
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Personal protective equipment</p>
+      <p  className='text-xl'>{t("military.protection", lang)}</p>
     </div>
+
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
       <p  className='text-lg'>Surveillance: Closed-circuit television<br/> (CCTV) cameras</p>
     </div>
+
+
 
      <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
       <p  className='text-lg'>Fixed-focus Internet Protocol (IP) cameras</p>

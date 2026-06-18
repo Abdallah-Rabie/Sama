@@ -1,8 +1,14 @@
+"use client";
+
 import logoo from "../../../public/1757963859 (1).jpg";
 import Image from 'next/image';
-import Link from 'next/link';import React from 'react'
+import Link from 'next/link';
+import React from 'react';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function page() {
+  const { lang } = useLanguage();
   return (
 
     <>
@@ -31,10 +37,10 @@ export default function page() {
     
         {/* TEXT */}
         <div className='bg-gray-100 h-[400px] p-2'>
-          <h2 className="text-3xl font-normal mb-4">Civil division</h2>
+          <h2 className="text-3xl font-normal mb-4">{t("civil.title", lang)}</h2>
     
           <p className="leading-7 font-normal">
-At Sama Holding, we provide a fully integrated system of engineering and construction services covering the entire project lifecycle — from design to operation. Our teams specialize in infrastructure, tunneling, water and energy networks, roads, landscaping, and control systems, giving us the capability to execute multidisciplinary projects under unified and efficient management. We are committed to the highest quality and safety standards, operating under internal control systems that ensure precision at every stage. With our diverse expertise, we deliver tailored solutions for each project to achieve our clients’ goals efficiently, supported by a proven track record that reflects our commitment to professionalism and reliability. (This represents one of our core divisions: the Civil Division)    
+{t("civil.description", lang)}
     </p>
         </div>
     

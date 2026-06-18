@@ -1,9 +1,14 @@
+"use client";
+
 import React from 'react'
 import logoo from "../../../public/1757963794.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function page() {
+  const { lang } = useLanguage();
   return (
 <>
 
@@ -11,14 +16,14 @@ export default function page() {
           <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
 
  <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-   Medical divisions  </h2>   
+   {t("nav.medical", lang)}  </h2>   
   </div>
 
 <div className="flex items-start ms-16 gap-2 my-5 text-gray-400">
-  <Link href={"/"}>HOME</Link>
+  <Link href={"//"}>{t("careers.home", lang)}</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  Medical divisions
+  {t("nav.medical", lang)}
 </Link>
 
 </div>
@@ -32,10 +37,10 @@ export default function page() {
 
     {/* TEXT */}
     <div className='bg-gray-100 h-full p-4'>
-      <h2 className="text-3xl font-normal mb-4">Medical divisions</h2>
+      <h2 className="text-3xl font-normal mb-4">{t("medical.title", lang)}</h2>
 
         <p className=" font-normal break-words text-lg">
-At Sama Holding, we deliver healthcare projects end-to-end—from planning and design to construction, commissioning, and operations—prioritizing patient safety, operational efficiency, and regulatory compliance. We work across hospitals, specialty centers, clinics, laboratories, and pharmacies, integrating medical and engineering systems for high readiness and service continuity. We focus on: Evidence-based clinical flows (patient/staff/supply), infection control, and sterile zones. Specialized systems: medical gas networks, high-spec HVAC, operating and isolation rooms, imaging suites, clean rooms. Smart and low-current systems: nurse call, surveillance, BMS, and integration with HIS/PACS/LIS and data networks. Thorough commissioning, O&M plans, and technical support. Compliance with national and international standards (MoH, SFDA, NFPA, HTM) plus sustainability and energy efficiency.</p>
+{t("medical.description", lang)}</p>
     </div>
 
     {/* IMAGE */}

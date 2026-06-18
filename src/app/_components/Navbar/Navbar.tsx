@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,9 +11,12 @@ import {
 import Image from "next/image";
 import logo from "../../../../public/logo_20250913_103209.svg";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { lang, setLang } = useLanguage();
   const pathname = usePathname();
 
   return (
@@ -44,8 +47,8 @@ export default function Navbar() {
           <NavigationMenuList className="hidden lg:flex gap-4">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/" className={pathname === "/" ? "nav-active" :""}>
-                  Home
+                <Link href="/" className={pathname === "/" ? "nav-active" : "nav-link"}>
+                  {t("nav.home", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -53,7 +56,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/about" className={pathname === "/about" ? "nav-active" : "nav-link"}>
-                  About Sama
+                  {t("nav.about", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -62,7 +65,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/civil-division" className={pathname === "/civil-division" ? "nav-active" : "nav-link"}>
-                  Civil division
+                  {t("nav.civil", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -71,7 +74,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/military-divisions" className={pathname === "/military-divisions" ? "nav-active" : "nav-link"}>
-                  Military divisions
+                  {t("nav.military", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -80,7 +83,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/medical-divisions" className={pathname === "/medical-divisions" ? "nav-active" : "nav-link"}>
-                  Medical divisions
+                  {t("nav.medical", lang)}
                 </Link> 
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -88,7 +91,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/Projects" className={pathname === "/Projects" ? "nav-active" : "nav-link"}>
-                  Projects
+                  {t("nav.projects", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -97,7 +100,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/careers" className={pathname === "/careers" ? "nav-active" : "nav-link"}>
-                  Careers
+                  {t("nav.careers", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -105,10 +108,34 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/Contact" className={pathname === "/Contact" ? "nav-active" : "nav-link"}>
-                  Contact us
+                  {t("nav.contact", lang)}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+
+
+            <NavigationMenuItem>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setLang("ar")}
+                  className={`nav-link ${lang === "ar" ? "nav-active" : ""}`}
+                >
+                  {t("nav.arabic", lang)}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setLang("en")}
+                  className={`nav-link ${lang === "en" ? "nav-active" : ""}`}
+                >
+                  {t("nav.english", lang)}
+                </button>
+              </div>
+            </NavigationMenuItem>
+
+
           </NavigationMenuList>
         </div>
 
@@ -119,14 +146,18 @@ export default function Navbar() {
       {open && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-5 flex flex-col gap-4 z-50">
 
-          <Link onClick={() => setOpen(false)} href="/">Home</Link>
-          <Link onClick={() => setOpen(false)} href="/about">About Sama</Link>
-          <Link onClick={() => setOpen(false)} href="/civil-division">Civil division</Link>
-          <Link onClick={() => setOpen(false)} href="/military-divisions">Military divisions</Link>
-          <Link onClick={() => setOpen(false)} href="/medical-divisions">Medical divisions</Link>
-          <Link onClick={() => setOpen(false)} href="/projects">Projects</Link>
-          <Link onClick={() => setOpen(false)} href="/careers">Careers</Link>
-          <Link onClick={() => setOpen(false)} href="/contact">Contact us</Link>
+          <Link onClick={() => setOpen(false)} href="/">{t("navbar.home", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/about">{t("navbar.aboutSama", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/civil-division">{t("navbar.civilDivision", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/military-divisions">{t("navbar.militaryDivisions", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/medical-divisions">{t("navbar.medicalDivisions", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/projects">{t("nav.projects", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/careers">{t("nav.careers", lang)}</Link>
+          <Link onClick={() => setOpen(false)} href="/contact">{t("nav.contact", lang)}</Link>
+          <div className="flex gap-2">
+            <button type="button" onClick={() => { setOpen(false); setLang("ar"); }}>{t("nav.arabic", lang)}</button>
+            <button type="button" onClick={() => { setOpen(false); setLang("en"); }}>{t("nav.english", lang)}</button>
+          </div>
           
         </div>
       )}

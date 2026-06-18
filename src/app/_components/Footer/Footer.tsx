@@ -1,9 +1,15 @@
+"use client";
+
 import React from 'react'
 import logo from "../../../../public/logo_20250913_103209.svg";
 import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
+
 export default function Footer() {
+  const { lang } = useLanguage();
   return (
     <div className='bg-[#1b2e37]  p-10'>
 
@@ -12,45 +18,45 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
 
             <div className="flex flex-col gap-3 items-start">
-            <h2 className='text-2xl font-bold mb-2 text-white'>Website sections</h2>
+            <h2 className='text-2xl font-bold mb-2 text-white'>{t("footer.websiteSections", lang)}</h2>
 
             <div className=" flex flex-col gap-3 items-start text-white">
 
-              <Link href="/">Home</Link>
-            <Link href="/about">About Sama</Link>
-            <Link href="/Projects">Project</Link>
-            <Link href="/Contact">Contact Us</Link>
+              <Link href="/">{t("nav.home", lang)}</Link>
+            <Link href="/about">{t("nav.about", lang)}</Link>
+            <Link href="/Projects">{t("nav.projects", lang)}</Link>
+            <Link href="/Contact">{t("nav.contact", lang)}</Link>
             </div>
             </div>
 
             <div className="flex flex-col gap-3 items-start text-white">
                 <h3 className="text-2xl font-bold mb-2 ">
-                Sectors
+                {t("nav.projects", lang)}
                 </h3>
 
-                <Link href="/civil-division">Civil division</Link>
-                <Link href="/military-divisions">Military divisions</Link>
-                <Link href="/medical-divisions">Medical divisions</Link>
+                <Link href="/civil-division">{t("nav.civil", lang)}</Link>
+                <Link href="/military-divisions">{t("nav.military", lang)}</Link>
+                <Link href="/medical-divisions">{t("nav.medical", lang)}</Link>
             </div>
 
             <div className="flex flex-col gap-3 items-start text-white">
                 <h3 className="text-2xl font-bold mb-2">
-                Civil division
+                {t("civil.title", lang)}
                 </h3>
-                <button>Construction and Building</button>
-                <button>Electromechanics</button>
-                <button>Energy</button>
+                <button>{t("home.constructionBuilding", lang)}</button>
+                <button>{t("home.electromechanics", lang)}</button>
+                <button>{t("home.energy", lang)}</button>
             </div>
 
             <div className="flex flex-col gap-3 items-start text-white">
                 <h3 className="text-2xl font-bold mb-2">
-                Projects
+                {t("home.highlightedProjects", lang)}
                 </h3>
 
-                <button>Royal Commission for Jubail and</button>
-                <button>Yanbu</button>
-                <button>Jeddah Stadium Project</button>
-                <button>Tunnels and Bridges Works</button>
+                <button>{t("home.royalCommission", lang)}</button>
+                <button>{t("footer.yanbu", lang)}</button>
+                <button>{t("home.jeddahStadium", lang)}</button>
+                <button>{t("home.tunnelsBridges", lang)}</button>
             </div>
         </div>
 
@@ -66,15 +72,15 @@ export default function Footer() {
         <Image src={logo} alt="logo" width={150} height={80} className="invert brightness-0"/>
               
           <div>
-            <h4 className="font-semibold">0558240153</h4>
-            <p className="text-sm">contact@samaholding.com</p>
+            <h4 className="font-semibold">{t("footer.phone", lang)}</h4>
+            <p className="text-sm">{t("footer.email", lang)}</p>
           </div>
         </div>
 
         {/* Privacy */}
         <div className="flex flex-col items-center justify-center gap-2 p-3 text-white">
-          <h5 className="font-semibold">Privacy Policy</h5>
-          <p className="text-sm">All rights reserved</p>
+          <h5 className="font-semibold">{t("footer.privacyPolicy", lang)}</h5>
+          <p className="text-sm">{t("footer.allRightsReserved", lang)}</p>
         </div>
 
         {/* Social */}

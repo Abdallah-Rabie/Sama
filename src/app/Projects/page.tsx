@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Link from 'next/link';
 import Image from "next/image";
@@ -5,16 +7,19 @@ import logo from "../../../public/سلايدر-رييسي4.jpg";
 import logo8 from "../../../public/1757769421.jpg";
 import logo9 from "../../../public/1726026550.jpeg";
 import { FaArrowRight } from 'react-icons/fa';
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function Page() {
+  const { lang } = useLanguage();
   return (
    <>
    
     <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400  mt-20">
-  <Link href={"/"}>HOME</Link>
+  <Link href={"/"}>{t("careers.home", lang)}</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  Projects
+  {t("projects.royalCommission", lang)}
 </Link>
 </div>
 
@@ -42,11 +47,9 @@ export default function Page() {
 
    <div className="w-full mx-auto text-xl mt-10">
 
-    <h1 className="text-center font-bold text-4xl text-[#1d2e64] mb-2"> نبني مشاريع تصنع المستقبل </h1>
+    <h1 className="text-center font-bold text-4xl text-[#1d2e64] mb-2">{t("home.royalCommission", lang)}</h1>
 
-    <p className='bg-gray-100 p-4 text-2xl text-right'>بغض النظر عن حجم المشروع أو نطاقه، نحن ملتزمون تمامًا أمام عملائنا. كفريق واحد، نصغي باهتمام إلى أهدافك واحتياجاتك. تعتمد عملية تطوير استراتيجياتنا على متطلبات عملك. نقوم بمتابعة أداء شركتنا بانتظام. ولا يوجد ما نفضّله أكثر من كسب ثقتك وبناء علاقة ناجحة وطويلة الأمد معك. تنوعت مشاريعنا لتشمل مجالات متعددة من البنية التحتية والطرق والجسور، إلى مشاريع الصرف الصحي وشبكات المياه، وصولاً إلى المرافق الرياضية والتجارية والخدمية. نمتلك خبرة واسعة في تنفيذ المشاريع الإنشائية الثقيلة، والأعمال المدنية المعقدة، وكذلك المشاريع الخدمية التي تخدم المجتمع بشكل مباشر. يتيح لنا هذا التنوع تصميم حلول مرنة ومتكاملة تناسب احتياجات كل عميل على حدة، مع الحفاظ على أعلى معايير الجودة والسلامة في مختلف القطاعات. نحن نفخر بقدرتنا على إدارة مشاريع متنوعة في طبيعتها ومتباينة في متطلباتها ضمن بيئات عمل متعددة التحديات
-
-</p>
+    <p className='bg-gray-100 p-4 text-2xl text-right'>{t("medical.extra", lang)}</p>
    </div>
 
  </div>

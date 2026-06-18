@@ -21,10 +21,13 @@ import logo8 from "../../public/1757769421.jpg";
 import logo9 from "../../public/1726026550.jpeg";
 import logo10 from "../../public/main_logo.jpeg";
 import Link from "next/link";
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 import { FaArrowRight } from "react-icons/fa";
 import Action, { Action1, Action2, Action3, Action4, Action5,} from "./_components/Action/Action";
 
 export default function Home() {
+  const { lang } = useLanguage();
 
   return (
     <>
@@ -54,7 +57,7 @@ export default function Home() {
                 className="w-full h-full object-cover rounded-2xl"
               />
 
-         <div className="absolute inset-0 bg-black/70 pointer-events-none"></div>
+         <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
         </div>
           </SwiperSlide>
 
@@ -105,11 +108,11 @@ export default function Home() {
         <div className="w-full lg:w-8/12 flex flex-col gap-5">
 
           <h1 className="text-[32px] font-bold ">
-            About Sama
+            {t("home.aboutTitle", lang)}
           </h1> 
 
           <p className="text-[14px] sm:text-[16px] font-normal">
-            As a construction group founded in 1990, we have witnessed remarkable growth over the years, expanding and diversifying our operations across various sectors. Through strategic growth initiatives, our group provides services in civil, urban, industrial, commercial, military, and medical sectors. Our dedication to achieving excellence and proactivity is clearly embodied in our evolutionary journey.
+            {t("home.aboutText", lang)}
           </p>
 
           {/* STATS */}
@@ -142,7 +145,7 @@ export default function Home() {
 
 <div className="bg-[#F1F1F1] p-10">
 
-      <h2 className="text-center text-4xl font-bold mb-10">Our divisions</h2>
+      <h2 className="text-center text-4xl font-bold mb-10">{t("home.ourDivisions", lang)}</h2>
 
         <div className="w-[90%] mx-auto ">
           
@@ -164,10 +167,10 @@ export default function Home() {
 
       <h1 className="text-black text-lg font-bold">
         
-        Military divisions
+        {t("nav.military", lang)}
       </h1>
     </div>
-  </Link>
+</Link>
 
   {/* CARD 2 */}
   <Link href={"/medical-divisions"} className="block  rounded-xl overflow-hidden">
@@ -185,7 +188,7 @@ export default function Home() {
       <div className="bg-[#dfdfdf] p-5">
 
       <h1 className="text-black text-lg font-bold">
-        Medical divisions
+        {t("nav.medical", lang)}
       </h1>
     </div>
   </Link>
@@ -204,7 +207,7 @@ export default function Home() {
 
   <div className="bg-[#dfdfdf] p-5">
     <h1 className="text-black text-lg font-bold">
-      Civil division
+      {t("nav.civil", lang)}
     </h1>
   </div>
 </Link>
@@ -222,7 +225,7 @@ export default function Home() {
 
   {/* TITLE */}
   <h2 className="text-[32px] line-height-[38px] font-normal text-center mb-8">
-    Civil division
+    {t("civil.title", lang)}
   </h2>
 
   {/* GRID */}
@@ -244,7 +247,7 @@ export default function Home() {
   <div className="p-4 flex flex-col gap-2 flex-1">
 
     <h3 className="text-[18px] font-medium hover:text-black text-gray-400 line-clamp-1">
-      Construction and Building
+      {t("home.constructionBuilding", lang)}
     </h3>
 
     <p className="leading-6 text-[15px] text-black">
@@ -282,7 +285,7 @@ export default function Home() {
   <div className="p-4 flex flex-col gap-2">
 
       <h3 className="text-[18px] font-medium hover:text-black text-gray-400 line-clamp-1">
-      Electromechanics
+      {t("home.electromechanics", lang)}
     </h3>
 
         <p className="leading-6 text-[15px] ">
@@ -320,7 +323,7 @@ export default function Home() {
       <div className="p-5 flex flex-col gap-3 flex-1">
             <h3 className="text-[18px] font-medium hover:text-black text-gray-400 line-clamp-1">
 
-          Energy
+          {t("home.energy", lang)}
         </h3>
 
                 <p className="leading-6 text-[15px] ">
@@ -350,7 +353,7 @@ export default function Home() {
    <Link href="/Projects" className="w-60 text-center bg-transparent border-1 border-gray-500
     text-gray-500 py-4 px-4 rounded-lg hover:bg-[#8b8b8b] hover:text-white transition duration-300">
 
-    See All Civil Division
+    {t("home.seeAllCivil", lang)}
   </Link>
 </div>
 </div>
@@ -360,7 +363,7 @@ export default function Home() {
 <div className="bg-[#F1F1F1] py-10 mt-10">
 
   <h2 className="text-center text-3xl md:text-4xl font-normal mb-10">
-    Highlighted projects
+    {t("home.highlightedProjects", lang)}
   </h2>
 
   <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -382,7 +385,7 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
 
         <h3 className="text-3xl font-normal">
-          Royal Commission for Jubail and Yanbu
+          {t("home.royalCommission", lang)}
         </h3>
 
         <div className="flex items-center gap-2 ">
@@ -408,7 +411,7 @@ export default function Home() {
 
       <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
         <h3 className="text-4xl font-normal">
-          Jeddah Stadium Project
+          {t("home.jeddahStadium", lang)}
         </h3>
 
        <div className="flex items-center gap-2 ">
@@ -435,7 +438,7 @@ export default function Home() {
 
       <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
         <h3 className="text-3xl font-normal">
-          Tunnels and Bridges Works
+          {t("home.tunnelsBridges", lang)}
         </h3>
 
        <div className="flex items-center gap-2 ">
@@ -460,7 +463,7 @@ export default function Home() {
 
   <Link href="/Projects" className="w-60 text-center bg-transparent border-1  border-gray-500 text-gray-500 
    py-4 px-4 rounded-lg hover:bg-[#8b8b8b] hover:text-white transition duration-300">
-    See All Projects
+    {t("home.seeAllProjects", lang)}
   </Link>
 </div>
 </div>

@@ -1,12 +1,15 @@
 "use client";
 
-import React from 'react'
 import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
 import { t } from "@/lib/i18n";
 
-export default function page() {
+export default function Translate({
+  id,
+  className,
+}: {
+  id: string;
+  className?: string;
+}) {
   const { lang } = useLanguage();
-  return (
-    <div className='mt-20'>{t("contact.page", lang)}</div>
-  )
+  return <span className={className}>{t(id, lang)}</span>;
 }

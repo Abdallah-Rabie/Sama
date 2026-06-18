@@ -1,9 +1,15 @@
+"use client";
+
 import React from 'react'
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/app/_components/LanguageProvider/LanguageProvider";
+import { t } from "@/lib/i18n";
 
 export default function Action() {
 
-    const [count, setCount] = useState(0);
+  const { lang } = useLanguage();
+
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
@@ -31,7 +37,7 @@ export default function Action() {
           </h2>
 
       <p className="font-bold">
-        Years of giving
+        {t("action.years", lang)}
       </p>
     </div>
    
@@ -42,7 +48,7 @@ export default function Action() {
 
 
 export  function Action1() {
-
+    const { lang } = useLanguage();
     const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -71,7 +77,7 @@ export  function Action1() {
           </h2>
 
       <p className="font-bold">
-       Sectors
+        {t("action.sectors", lang)}
       </p>
     </div>
    
@@ -84,7 +90,7 @@ export  function Action1() {
 
 
 export  function Action2() {
-
+const { lang } = useLanguage();
     const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -113,7 +119,7 @@ export  function Action2() {
           </h2>
 
       <p className="font-bold">
-          Bridges and tunnels
+          {t("action.bridgesTunnels", lang)}
       </p>
     </div>
    
@@ -126,6 +132,7 @@ export  function Action2() {
 
 
 export function Action3() {
+  const { lang } = useLanguage();
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -153,7 +160,7 @@ export function Action3() {
       </h2>
 
       <p className="font-bold">
-        Projects value
+        {t("action.projectsValue", lang)}
       </p>
     </div>
   );
@@ -162,7 +169,7 @@ export function Action3() {
 
 
 export  function Action4() {
-
+const { lang } = useLanguage();
     const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -191,7 +198,7 @@ export  function Action4() {
           </h2>
 
       <p className="font-bold">
-          Bridges and tunnels
+          {t("action.bridgesTunnels", lang)}
       </p>
     </div>
    
@@ -203,7 +210,7 @@ export  function Action4() {
 
 
 export  function Action5() {
-
+  const { lang } = useLanguage();
     const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -233,7 +240,7 @@ export  function Action5() {
           </h2>
 
       <p className="font-bold">
-         Bridges and tunnels
+         {t("action.bridgesTunnels", lang)}
       </p>
     </div>
    
