@@ -29,7 +29,7 @@ export default function Page() {
 
   <div className="mx-auto mt-10  my-5 gap-5 ">
 
-  <div className="relative w-full h-[450px] rounded-2xl overflow-hidden mx-auto">
+  {/* <div className="relative w-full h-[450px] rounded-2xl overflow-hidden mx-auto">
     
   <video
     src="/Saudi Arabia.mp4"
@@ -42,7 +42,7 @@ export default function Page() {
   />
 
   <div className="absolute inset-0 bg-black/70 pointer-events-none"></div>
-</div>
+</div> */}
 
 
    <div className="w-full mx-auto text-xl mt-10">
