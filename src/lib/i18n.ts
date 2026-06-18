@@ -126,15 +126,46 @@ const translations: Record<string, { en: string; ar: string }> = {
   "footer.phone": { en: "0558240153", ar: "0558240153" },
   "footer.email": { en: "contact@samaholding.com", ar: "contact@samaholding.com" },
   "footer.yanbu": { en: "Yanbu", ar: "ينبع" },
+  "action.years": { en: "Years of giving", ar: "عام من العطاء" },
   "action.sectors": { en: "Sectors", ar: "القطاعات" },
-  "action.bridgesTunnels": { en: "Bridges and tunnels", ar: "الجسور والأنفاق" },
-  "action.projectsValue": { en: "Projects value", ar: "قيمة المشاريع" },
-  "action.readMore": { en: "Read More", ar: "اقرأ المزيد" },
+  "action.bridgesTunnels": { en: "Engineers and technicians", ar: "مـهنــدس وفــنـــي" },
+  "action.bridgesTunnelss": { en: "Bridges and tunnels", ar: "الجسور والأنفاق" },
+  "action.projectsValue": { en: "Km² paved streets", ar: "كلم² شــــوارع مسفلتة" },
+  "action.readMore": { en: "Value of ongoing projects", ar: "قيمة المشاريع القائمة" },
   "navbar.home": { en: "Home", ar: "الرئيسية" },
   "navbar.aboutSama": { en: "About Sama", ar: "عن سما" },
   "navbar.civilDivision": { en: "Civil division", ar: "القسم المدني" },
   "navbar.militaryDivisions": { en: "Military divisions", ar: "الأقسام العسكرية" },
   "navbar.medicalDivisions": { en: "Medical divisions", ar: "الأقسام الطبية" },
+  "medical.intro": {
+  en: "Sama is a leader in the supply of healthcare services and the distribution of medical consumables, as well as all products related to dialysis and dental industries within the Kingdom of Saudi Arabia. It represents well-known global and local companies to distribute a wide range of products and provide healthcare providers with the latest solutions and technologies, along with high-quality services.",
+  ar: "سما رائدة في توريد خدمات الرعاية الصحية وتوزيع المستهلكات الطبية، وكذلك جميع المنتجات المتعلقة بالغسيل الكلوي وصناعات الأسنان داخل المملكة العربية السعودية. تمثل شركات عالمية ومحلية معروفة لتوزيع مجموعة واسعة من المنتجات وتقديم أحدث الحلول والتقنيات لمقدمي الرعاية الصحية، إلى جانب خدمات عالية الجودة."},
+
+  "civil.descriptionn": {
+  en: "Sama offers a complete range of construction services...",
+  ar: "تقدم سما مجموعة متكاملة من خدمات البناء والتشييد..."},
+
+  "civil.electromechanical": {
+  en: "Sama offers a wide range of electrical, mechanical, and plumbing services.",
+  ar: "تقدم سما مجموعة واسعة من خدمات الكهرباء والميكانيكا والسباكة."},
+
+  "civil.energyTransmission": {
+  en: "Sama provides energy transmission services...",
+  ar: "تقدم سما خدمات نقل الطاقة..."},
+
+"home.readMoree": {en: "Read More", ar: "اقرأ المزيد"},
+
+"projects.tunnelsDescc": { en: "Electrical installations, roads and bridges, storm water systems...", ar: "التركيبات الكهربائية والطرق والجسور وأنظمة تصريف مياه الأمطار..."},
+
+"projects.jeddahStadiumDesc2": { en: "FIFA specs, retractable roof, cooling systems...", ar: "مواصفات FIFA، سقف قابل للطي، أنظمة تبريد..."},
+
+"projects.infrastructureDesc": { en: "Infrastructure, bridges, tunnels and road systems...", ar: "البنية التحتية والجسور والأنفاق وأنظمة الطرق..."},
+
+"medical.thermalCameras": {
+  en: "Thermal cameras, autofocus cameras",
+  ar: "كاميرات حرارية وكاميرات ذات تركيز تلقائي"
+}
+
 }
 export function t(key: string, lang: Language) {
   return translations[key]?.[lang] ?? key;

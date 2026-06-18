@@ -16,10 +16,10 @@ export default function Page() {
    <>
    
     <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400  mt-20">
-  <Link href={"/"}>{t("careers.home", lang)}</Link>
+  <Link href={"/"}>HOME</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  {t("projects.royalCommission", lang)}
+  Projects
 </Link>
 </div>
 
@@ -27,9 +27,9 @@ export default function Page() {
 
 
 
-  <div className="mx-auto mt-10  my-5 gap-5 ">
+  {/* <div className="mx-auto mt-10  my-5 gap-5 ">
 
-  {/* <div className="relative w-full h-[450px] rounded-2xl overflow-hidden mx-auto">
+  <div className="relative w-full h-[450px] rounded-2xl overflow-hidden mx-auto">
     
   <video
     src="/Saudi Arabia.mp4"
@@ -42,7 +42,7 @@ export default function Page() {
   />
 
   <div className="absolute inset-0 bg-black/70 pointer-events-none"></div>
-</div> */}
+</div>
 
 
    <div className="w-full mx-auto text-xl mt-10">
@@ -52,7 +52,7 @@ export default function Page() {
     <p className='bg-gray-100 p-4 text-2xl text-right'>{t("medical.extra", lang)}</p>
    </div>
 
- </div>
+ </div> */}
    
 
 

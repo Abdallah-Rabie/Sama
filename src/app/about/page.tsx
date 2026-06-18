@@ -115,7 +115,7 @@ export default function page() {
 </div>
 
     
-  <div className="w-[90%] mx-auto my-10 p-5 rounded-xl flex flex-col lg:flex-row gap-5 items-stretch">
+  <div className="w-[90%]  mx-auto my-10 p-5 rounded-xl flex flex-col lg:flex-row gap-5 items-stretch">
 
   {/* TEXT */}
   <div className="lg:w-1/2 w-full bg-gray-100 p-6 rounded-xl flex">
@@ -128,9 +128,8 @@ export default function page() {
 
 </div>
     </div>
-  </div>
 
-  {/* IMAGE */}
+      {/* IMAGE */}
  <div className="w-full sm:w-1/2 relative min-h-[400px]">
     <Image
       src={logo}
@@ -139,6 +138,10 @@ export default function page() {
       className="object-cover rounded-xl"
     />
   </div>
+
+  </div>
+
+
 
 </div>
 

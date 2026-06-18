@@ -250,15 +250,15 @@ export default function Home() {
       {t("home.constructionBuilding", lang)}
     </h3>
 
-    <p className="leading-6 text-[15px] text-black">
-      Sama offers a complete range of construction services...
-    </p>
+   <p className="leading-6 text-[15px] text-black">
+  {t("civil.descriptionn", lang)}
+</p>
 
 <div className="flex items-center gap-2 mt-3 text-gray-500 font-medium hover:gap-3 transition-all duration-300 cursor-pointer">
   
   <button>
-    Read More
-  </button>
+  {t("home.readMoree", lang)}
+</button>
 
     <span className="text-white bg-black p-2 rounded-full">
         <FaArrowRight />
@@ -288,16 +288,15 @@ export default function Home() {
       {t("home.electromechanics", lang)}
     </h3>
 
-        <p className="leading-6 text-[15px] ">
-
-      Sama offers a wide range of electrical, mechanical, and plumbing services..
-    </p>
+    <p className="leading-6 text-[15px]">
+  {t("civil.electromechanical", lang)}
+</p>
 
    <div className="flex items-center gap-2 mt-3 text-gray-500 font-medium hover:gap-3 transition-all duration-300 cursor-pointer">
   
-  <button>
-    Read More
-  </button>
+ <button>
+  {t("home.readMoree", lang)}
+</button>
 
     <span className="text-white bg-black p-2 rounded-full">
         <FaArrowRight />
@@ -326,16 +325,15 @@ export default function Home() {
           {t("home.energy", lang)}
         </h3>
 
-                <p className="leading-6 text-[15px] ">
-
-          Sama provides energy transmission services...
-        </p>
+        <p className="leading-6 text-[15px]">
+       {t("civil.energyTransmission", lang)}
+       </p>
 
    <div className="flex items-center gap-2 mt-3 text-gray-500 font-medium hover:gap-3 transition-all duration-300 cursor-pointer">
   
-  <button>
-    Read More
-  </button>
+ <button>
+  {t("home.readMoree", lang)}
+</button>
 
     <span className="text-white bg-black p-2 rounded-full">
         <FaArrowRight />
@@ -389,9 +387,9 @@ export default function Home() {
         </h3>
 
         <div className="flex items-center gap-2 ">
-          <p className="text-xl mt-2 line-clamp-2 ">
-          Electrical installations, roads and bridges, storm water systems...
-        </p>
+      <p className="text-xl mt-2 line-clamp-2">
+  {t("projects.tunnelsDescc", lang)}
+</p>
 
         <div className="flex justify-end mt-4">
           <button className="w-10 h-10 rounded-full border border-[#B5862F] text-[#B5862F] flex items-center justify-center hover:bg-[#B5862F] hover:text-white transition">
@@ -416,9 +414,9 @@ export default function Home() {
 
        <div className="flex items-center gap-2 ">
 
-         <p className="text-xl mt-2 line-clamp-2">
-          FIFA specs, retractable roof, cooling systems...
-        </p>
+      <p className="text-xl mt-2 line-clamp-2">
+  {t("projects.jeddahStadiumDesc2", lang)}
+</p>
 
         <div className="flex justify-end mt-4">
           <button className="w-10 h-10 rounded-full border border-[#B5862F] text-[#B5862F] flex items-center justify-center hover:bg-[#B5862F] hover:text-white transition">
@@ -443,9 +441,9 @@ export default function Home() {
 
        <div className="flex items-center gap-2 ">
 
-         <p className="text-xl mt-2 line-clamp-2">
-          Infrastructure, bridges, tunnels and road systems...
-        </p>
+      <p className="text-xl mt-2 line-clamp-2">
+  {t("projects.infrastructureDesc", lang)}
+</p>
 
         <div className="flex justify-end mt-4">
           <button className="w-10 h-10 rounded-full border border-[#B5862F] text-[#B5862F] flex items-center justify-center hover:bg-[#B5862F] hover:text-white transition">
@@ -461,7 +459,7 @@ export default function Home() {
 
   <div className="flex justify-center mt-10 ">
 
-  <Link href="/Projects" className="w-60 text-center bg-transparent border-1  border-gray-500 text-gray-500 
+  <Link href="/Projects" className="w-60 text-center bg-transparent border  border-gray-500 text-gray-500 
    py-4 px-4 rounded-lg hover:bg-[#8b8b8b] hover:text-white transition duration-300">
     {t("home.seeAllProjects", lang)}
   </Link>

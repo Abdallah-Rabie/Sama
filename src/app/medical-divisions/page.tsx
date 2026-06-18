@@ -55,56 +55,76 @@ export default function page() {
 
 
 
-<div className="w-[90%] mx-auto py-8 ">
+<div className="w-[90%] mx-auto py-8">
 
-<p className=" text-xl  font-normal my-5">
-Sama is a leader in the supply of healthcare services and the distribution of medical consumables, as well as all products related to dialysis and dental industries within the Kingdom of Saudi Arabia. It represents well-known global and local companies to distribute a wide range of products and provide healthcare providers with the latest solutions and technologies, along with high-quality services.
-   </p>
+  <p className="text-xl font-normal my-5">
+    {t("medical.intro", lang)}
+  </p>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-8 my-5">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-8 my-5">
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-lg'>
-       Disposable consumables for dialysis <br/> procedures
-        </p>
+      <p className="text-lg">
+        {t("medical.dialysisConsumables", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'>UVital-Dura bicarbonate</p>
+      <p className="text-xl">
+        {t("medical.bicarbonate", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Dialysis</p>
+      <p className="text-xl">
+        {t("medical.dialysis", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-lg'>Medical metro carts and emergency carts, and medicine distribution </p>
+      <p className="text-lg">
+        {t("medical.metroCarts", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'> Laboratory and hospital furniture </p>
+      <p className="text-xl">
+        {t("medical.furniture", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Spare parts for medical devices </p>
+      <p className="text-xl">
+        {t("medical.spareParts", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'>Haier medical refrigerators </p>
+      <p className="text-xl">
+        {t("medical.refrigerators", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'>Medical products for individual use </p>
+      <p className="text-xl">
+        {t("medical.products", lang)}
+      </p>
     </div>
 
     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'>Dental products and consumables </p>
+      <p className="text-xl">
+        {t("medical.dentalProducts", lang)}
+      </p>
     </div>
-   </div>
 
-    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className='text-xl'>Thermal cameras, autofocus cameras</p>
-    </div>
+  </div>
+
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">
+      {t("medical.thermalCameras", lang)}
+    </p>
+  </div>
+
 </div>
 
 </>  )

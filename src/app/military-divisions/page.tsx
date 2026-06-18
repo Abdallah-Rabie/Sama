@@ -60,7 +60,7 @@ export default function page() {
 
 
 
-<div className="w-[90%] mx-auto py-8 bg-red-900 p-20">
+<div className="w-[90%] mx-auto py-8">
 
 <h3 className='text-black text-xl my-5'>{t("military.services", lang)}</h3>
 
@@ -72,72 +72,77 @@ export default function page() {
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-3">
 
-    <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className="font-normal text-xl">{t("military.uavCounter", lang)}
-        </p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="font-normal text-xl">
+      {t("military.uavCounter", lang)}
+    </p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>{t("military.uavCounter", lang)}</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">
+      {t("military.uavDescription", lang)}
+    </p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p className="font-normal text-xl">{t("military.training", lang)} </p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.training", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>{t("military.mineRemoval", lang)}</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.mineRemoval", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>{t("military.servicesGeneral", lang)}</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.servicesGeneral", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>{t("military.protection", lang)}</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.protection", lang)}</p>
+  </div>
 
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-lg">
+      {t("military.cctv", lang)}
+    </p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-lg'>Surveillance: Closed-circuit television<br/> (CCTV) cameras</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-lg">
+      {t("military.ipCameras", lang)}
+    </p>
+  </div>
 
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-lg">
+      {t("military.thermalCameras", lang)}
+    </p>
+  </div>
 
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.videoNetworks", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-lg'>Fixed-focus Internet Protocol (IP) cameras</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.access", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-lg'>Thermal cameras, autofocus cameras</p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.biometric", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Video networks </p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.operationsCenter", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Electronic access control </p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.traffic", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Facial recognition and biometric<br/> verification </p>
-    </div>
+  <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
+    <p className="text-xl">{t("military.siteSecurity", lang)}</p>
+  </div>
 
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Operations center video wall, technical <br/>furniture </p>
-    </div>
-
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Intelligent traffic management </p>
-    </div>
-
-     <div className="bg-gray-100 p-4 text-center rounded-[30px] hover:bg-[#1d2e64] transition duration-300 hover:text-white">
-      <p  className='text-xl'>Site security - fencing, barriers </p>
-    </div>
-
-
-   </div>
+</div>
 </div>
 
 </>  )

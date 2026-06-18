@@ -119,7 +119,7 @@ const { lang } = useLanguage();
           </h2>
 
       <p className="font-bold">
-          {t("action.bridgesTunnels", lang)}
+          {t("action.bridgesTunnelss", lang)}
       </p>
     </div>
    
@@ -240,7 +240,7 @@ export  function Action5() {
           </h2>
 
       <p className="font-bold">
-         {t("action.bridgesTunnels", lang)}
+         {t("action.readMore", lang)}
       </p>
     </div>
    
