@@ -114,7 +114,7 @@ const translations: Record<string, { en: string; ar: string }> = {
   "military.thermalCamerasDescription": { en: "Thermal and autofocus cameras for advanced threat detection.", ar: "كاميرات حرارية وتركيز تلقائي للكشف المتقدم عن التهديدات." },
   "medical.dialysisConsumablesDescription": { en: "High-quality disposable consumables for dialysis procedures.", ar: "مستهلكات قابلة للتصرف عالية الجودة لإجراءات الغسيل الكلوي." },
   "medical.dialysisDescription": { en: "Complete dialysis solution and support services.", ar: "حل الغسيل الكلوي الكامل وخدمات الدعم." },
-  "medical.metroCarts": { en: "Medical metro carts and emergency carts", ar: "عربات طبية وعربات طوارئ" },
+  // "medical.metroCarts": { en: "Medical metro carts and emergency carts", ar: "عربات طبية وعربات طوارئ" },
   "medical.medicineDistribution": { en: "and medicine distribution", ar: "وتوزيع الأدوية" },
   "projects.royalCommission": { en: "Royal Commission for Jubail and Yanbu", ar: "الهيئة الملكية للجبيل وينبع" },
   "projects.royalCommissionDesc": { en: "Royal Commission for Jubail and Yanbu (Electrical installations, roads and bridges...)", ar: "الهيئة الملكية للجبيل وينبع (التركيبات الكهربائية والطرق والجسور...)" },
