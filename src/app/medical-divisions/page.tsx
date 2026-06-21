@@ -33,22 +33,30 @@ export default function page() {
 
 <div className="w-[90%] mx-auto py-8">
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+ <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch min-h-[450px]">
 
-    {/* TEXT */}
-    <div className='bg-gray-100 h-full p-4 '>
-      <h2 className="text-3xl font-normal  ">{t("medical.title", lang)}</h2>
+  {/* TEXT */}
+  <div className="bg-gray-100 p-4 rounded-xl flex flex-col justify-center h-full">
+    <h2 className="text-3xl font-normal mb-4">
+      {t("medical.title", lang)}
+    </h2>
 
-        <p className=" font-normal break-words text-lg">
-{t("medical.description", lang)}</p>
-    </div>
-
-    {/* IMAGE */}
-    <div className="relative w-full h-[450px] sm:h-full">
-      <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
-    </div>
-
+       <p className={` font-normal ${  lang === "ar" ? "text-xl" : "text-[16px] sm:text-[18px]"  }`}>
+      {t("medical.description", lang)}
+    </p>
   </div>
+
+  {/* IMAGE */}
+  <div className="relative w-full h-[300px] sm:h-[400px] lg:h-full min-h-[300px]">
+    <Image
+      src={logoo}
+      alt="logo"
+      fill
+      className="object-cover rounded-xl"
+    />
+  </div>
+
+</div>
 
 </div>
 

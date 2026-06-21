@@ -53,7 +53,7 @@ export default function page() {
       <div className="w-full sm:w-8/12">
         <h1 className='my-3 font-normal text-black text-4xl'>{t("about.presidentMessage", lang)}</h1>
 
-        <p className={`font-normal ${  lang === "ar" ? "text-xl" : ""  }`}>{t("about.text1", lang)}</p>
+        <p className={` ${  lang === "ar" ? "text-2xl" : ""  }`}>{t("about.text1", lang)}</p>
 
         <h2 className='my-7 text-xl font-normal text-black'>{t("about.chairman", lang)}</h2>
 
@@ -116,32 +116,32 @@ export default function page() {
 </div>
 
     
-  <div className="w-[90%]  mx-auto my-10 p-5 rounded-xl flex flex-col lg:flex-row gap-5 items-stretch">
+<div className="w-[90%] mx-auto my-10 p-5 rounded-xl flex flex-col lg:flex-row gap-5 items-stretch">
 
   {/* TEXT */}
-  <div className="lg:w-1/2 w-full bg-gray-100 p-6 rounded-xl flex">
-    <div>
-      <h2 className="text-3xl font-bold mb-4">{t("about.safetyFirstSection", lang)}</h2>
+  <div className="w-full lg:w-1/2 bg-gray-100 p-6 rounded-xl h-full">
+    <div className="h-full flex flex-col justify-center">
+      <h2 className="text-3xl font-bold mb-4">
+        {t("about.safetyFirstSection", lang)}
+      </h2>
 
-    <p className={`leading-8 text-gray-700 ${lang === "ar" ? "text-2xl" : ""}`} >
-  {t("about.safetyText", lang)}
-  
-</p>
-
-</div>
+      <p className={`leading-8 text-gray-700 ${lang === "ar" ? "text-2xl" : ""}`}>
+        {t("about.safetyText", lang)}
+      </p>
     </div>
+  </div>
 
-      {/* IMAGE */}
- <div className="w-full sm:w-1/2 relative min-h-[400px]">
+  {/* IMAGE */}
+  <div className="w-full lg:w-1/2 relative h-[400px] lg:h-auto lg:min-h-full">
     <Image
       src={logo}
       alt="logo"
       fill
-      className="object-cover rounded-xl"
+      className="object-contain rounded-xl"
     />
   </div>
 
-  </div>
+</div>
 
 
 

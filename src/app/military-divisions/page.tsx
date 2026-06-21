@@ -33,11 +33,13 @@ export default function page() {
 
 <div className="w-[90%] mx-auto py-8 mt-5">
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch min-h-[400px]">
 
     {/* TEXT */}
-    <div className='bg-gray-100 h-full p-4'>
-      <h2 className="text-3xl font-normal mb-4"> {t("military.title", lang)} </h2>
+    <div className="bg-gray-100 p-5 rounded-xl h-full flex flex-col">
+      <h2 className="text-3xl font-normal mb-4">
+        {t("military.title", lang)}
+      </h2>
 
       <p className="font-normal text-lg">
         {t("military.description", lang)}
@@ -45,7 +47,7 @@ export default function page() {
     </div>
 
     {/* IMAGE */}
-    <div className="relative w-full h-[250px] sm:h-full">
+   <div className="relative w-full h-[400px] lg:h-auto min-h-[300px]">
   <Image
     src={logoo}
     alt="logo"
