@@ -15,12 +15,12 @@ export default function Page() {
   return (
    <>
    
-    <div className="w-[20%]  flex items-start ms-[60px] gap-2 my-5 text-gray-400  mt-20">
-  <Link href={"/"}>HOME</Link>
+<div className="w-[20%] flex items-start ms-[60px] gap-2 my-5 text-gray-400 mt-20">
+  <Link href={"/"}>{t("nav.home", lang)}</Link>
   <span>/</span>
   <Link href={""} className="whitespace-nowrap">
-  Projects
-</Link>
+    {t("nav.projects", lang)}
+  </Link>
 </div>
 
 <div className="border border-amber-700"></div>
@@ -63,44 +63,40 @@ export default function Page() {
      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     
         {/* CARD */}
-        <div className="relative h-[420px] rounded-xl overflow-hidden group cursor-pointer">
-    
-          <Image
-            src={logo8}
-            alt="project"
-            fill
-            className="object-cover group-hover:scale-105 transition duration-500"
-          />
-    
-          {/* overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-    
-          {/* content */}
-          <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-    
-           <h3 className="text-3xl font-normal max-w-[350px] leading-tight">
-             Royal Commission for Jubail and Yanbu
-                </h3>
-    
-            <div className="flex items-center gap-2 ">
-              <p className=" mt-2 line-clamp-3 ">
-                Royal Commission for Jubail and Yanbu(
+      <div className="relative h-[420px] rounded-xl overflow-hidden group cursor-pointer">
 
-              Electrical installations, roads and bridges...
-                
-            </p>
-    
-            <div className="flex justify-end mt-4">
-             <button className="w-10 h-10 rounded-full border border-[#B5862F]
+  <Image
+    src={logo8}
+    alt="project"
+    fill
+    className="object-cover group-hover:scale-105 transition duration-500"
+  />
+
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
+
+    <h3 className="text-3xl font-normal max-w-[350px] leading-tight">
+      {t("projects.royalCommission.title", lang)}
+    </h3>
+
+    <div className="flex items-center gap-2">
+      <p className="mt-2 line-clamp-3">
+        {t("projects.royalCommission.description", lang)}
+      </p>
+
+        <div className="flex justify-end mt-4">
+              <button className="w-10 h-10 rounded-full border border-[#B5862F]
                text-[#B5862F] flex items-center justify-center bg-[#B5862F] text-white transition">
                 <FaArrowRight />
               </button>
-            </div>
-            
-            </div>
-    
-          </div>
-        </div>
+
+           </div>
+
+    </div>
+
+  </div>
+</div>
     
         {/* CARD 2 */}
         <div className="relative h-[420px] rounded-xl overflow-hidden group cursor-pointer">
@@ -108,16 +104,15 @@ export default function Page() {
           <div className="absolute inset-0 bg-black/40"></div>
     
           <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-            <h3 className="text-4xl font-normal">
-              Jeddah Stadium Project
-            </h3>
+          <h3 className="text-4xl font-normal">
+         {t("projects.jeddahStadium.title", lang)}
+         </h3>
     
            <div className="flex items-center gap-2 ">
     
-             <p className=" mt-2 line-clamp-3">
-               Jeddah Stadium Project with
-              FIFA specs, retractable roof, cooling for stands,36
-            </p>
+            <p className="mt-2 line-clamp-3">
+  {t("projects.jeddahStadium.description", lang)}
+</p>
     
             <div className="flex justify-end mt-4">
                <button className="w-10 h-10 rounded-full border border-[#B5862F]
@@ -129,6 +124,8 @@ export default function Page() {
     
     
           </div>
+
+          
         </div>
     
         {/* CARD 3 */}
@@ -137,17 +134,15 @@ export default function Page() {
           <div className="absolute inset-0 bg-black/40"></div>
     
           <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-            <h3 className="text-3xl font-norml">
-              Tunnels and Bridges Works
-            </h3>
+          <h3 className="text-3xl font-norml">
+       {t("projects.tunnelsBridges.title", lang)}
+        </h3>
     
            <div className="flex items-center gap-2 ">
     
-             <p className=" line-clamp-3">
-              Tunnels and bridges Works,storm water
-              protection systems, historicoal and coastal deve.....
-             
-            </p>
+             <p className="line-clamp-3">
+      {t("projects.tunnelsBridges.desc", lang)}
+       </p>
     
             <div className="flex justify-end mt-4">
               <button className="w-10 h-10 rounded-full border border-[#B5862F]

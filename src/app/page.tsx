@@ -107,11 +107,12 @@ export default function Home() {
         {/* TEXT */}
         <div className="w-full lg:w-8/12 flex flex-col gap-5">
 
-          <h1 className="text-[32px] font-bold ">
+          <h1 className="text-[32px] font-bold">
             {t("home.aboutTitle", lang)}
           </h1> 
 
-          <p className="text-[14px] sm:text-[16px] font-normal">
+          <p className={` font-normal ${  lang === "ar" ? "text-2xl" : "text-[16px] sm:text-[18px]"  }`}>
+
             {t("home.aboutText", lang)}
           </p>
 
@@ -125,15 +126,7 @@ export default function Home() {
            <Action2/>
 
             <Action3/>  
-            {/* <div className="group hover:bg-gray-600 transition duration-300 p-4 rounded-lg">
-              <h2 className="text-2xl font-bold  group-hover:text-white transition duration-300">1M+</h2>
-              <p className="group-hover:text-white font-bold transition duration-300">
-                Km² paved streets
-              </p>
-            </div> */}
-
-
-        
+          
           <Action4/>
              <Action5/>   
           </div>

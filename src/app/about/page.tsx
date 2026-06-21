@@ -51,8 +51,9 @@ export default function page() {
       </div>
 
       <div className="w-full sm:w-8/12">
-        <h1 className='my-3 font-normal text-black text-3xl'>{t("about.presidentMessage", lang)}</h1>
-        <p>{t("about.text1", lang)}</p>
+        <h1 className='my-3 font-normal text-black text-4xl'>{t("about.presidentMessage", lang)}</h1>
+
+        <p className={`font-normal ${  lang === "ar" ? "text-xl" : ""  }`}>{t("about.text1", lang)}</p>
 
         <h2 className='my-7 text-xl font-normal text-black'>{t("about.chairman", lang)}</h2>
 
@@ -122,8 +123,9 @@ export default function page() {
     <div>
       <h2 className="text-3xl font-bold mb-4">{t("about.safetyFirstSection", lang)}</h2>
 
-    <p className="leading-8 text-gray-700">
+    <p className={`leading-8 text-gray-700 ${lang === "ar" ? "text-2xl" : ""}`} >
   {t("about.safetyText", lang)}
+  
 </p>
 
 </div>
@@ -153,27 +155,27 @@ export default function page() {
 
     {/* TITLE */}
     <div>
-      <h3 className="text-4xl font-bold mb-3">
-        Quality and Productivity
-      </h3>
+    <h3 className="text-4xl font-bold mb-3">
+  {t("quality.productivity", lang)}
+</h3>
     </div>
+
+
  <div className="flex flex-col lg:flex-row gap-10">
 
   {/* QUALITY */}
   <div className="w-full lg:w-1/2 flex flex-col gap-5">
 
     {/* TEXT */}
-    <div>
-      <span className="text-2xl font-semibold text-[#49a8aa]">
-        Quality
-      </span>
+   <div>
+  <span className="text-2xl font-semibold text-[#49a8aa]">
+    {t("quality.title", lang)}
+  </span>
 
-      <p className="text-gray-700 leading-8 mt-3">
-        We are committed to achieving quality that exceeds
-        standards in all our fields of work. We aim to achieve
-        an exceptional level of excellence.
-      </p>
-    </div>
+  <p className="text-gray-700 leading-8 mt-3">
+    {t("quality.description", lang)}
+  </p>
+</div>
 
     {/* IMAGES */}
     <div className="grid grid-cols-2 gap-4">
@@ -192,17 +194,15 @@ export default function page() {
   <div className="w-full lg:w-1/2 flex flex-col gap-5">
 
     {/* TEXT */}
-    <div>
-      <span className="text-2xl font-semibold text-[#49a8aa]">
-        Productivity Speed
-      </span>
+   <div>
+  <span className="text-2xl font-semibold text-[#49a8aa]">
+    {t("productivity.speed", lang)}
+  </span>
 
-      <p className="text-gray-700 leading-8 mt-3">
-        The key to Sama’s success is not shortcutting work,
-        but creating the right conditions to complete timelines
-        and plans in a timely manner.
-      </p>
-    </div>
+  <p className="text-gray-700 leading-8 mt-3">
+    {t("productivity.speed.description", lang)}
+  </p>
+</div>
 
     {/* IMAGES */}
     <div className="grid grid-cols-2 gap-4">
@@ -224,28 +224,20 @@ export default function page() {
 
 <div className="bg-[#128977] py-12 lg:py-20 px-4 text-center text-white rounded-xl">
 
-  <h2 className="text-xl md:text-2xl font-bold mb-3">
-    Environment and Sustainability
-  </h2>
+ <h2 className="text-xl md:text-2xl font-bold mb-3">
+  {t("environment.title", lang)}
+</h2>
 
-  <p className="text-sm md:text-lg">
-    Sustainability is not just a part of our strategy; it is our identity.
-    We are committed to being part of the solution in facing environmental challenges.
-  </p>
+<p className="text-sm md:text-lg">
+  {t("sustainability.description", lang)}
+</p>
 
   {/* line */}
   <div className="w-16 border-2 border-gray-500 mx-auto my-4"></div>
 
-  <p className="text-sm md:text-lg leading-8 max-w-4xl mx-auto px-2 md:px-0">
-    At Sama, we recognize that the future of business is not just about financial success,
-    but also about preserving our planet. Therefore, we strive to implement green building standards
-    by using sustainable materials and designs that emphasize energy efficiency.
-
-    We focus on ensuring that our operations have minimal environmental impact.
-    We are also committed to renewable energy sources and investing in solar energy technologies.
-    We apply the best industrial practices to ensure production processes respect the environment
-    and contribute to its preservation.
-  </p>
+ <p className="text-sm md:text-lg leading-8 max-w-4xl mx-auto px-2 md:px-0">
+  {t("sustainability.details", lang)}
+</p>
 
 </div>
 

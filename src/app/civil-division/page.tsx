@@ -16,17 +16,19 @@ export default function page() {
     <div className="relative w-full lg:w- h-30 mt-20">
               <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
     
-     <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-       Civil division
-         </h2>   
+    <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
+  {t("civil.division", lang)}
+</h2>  
       </div>
     
 
-    <div className="w-full md:w-auto  flex items-start ms-16 gap-2 my-5 text-gray-400">
-      <Link href={"/"}>HOME</Link>
-       <span>/</span>
-      <Link href={""} className="whitespace-nowrap"> Civil division</Link>
-    </div>
+   <div className="w-full md:w-auto flex items-start ms-16 gap-2 my-5 text-gray-400">
+  <Link href={"/"}>{t("nav.home", lang)}</Link>
+  <span>/</span>
+  <Link href={""} className="whitespace-nowrap">
+    {t("nav.civilDivision", lang)}
+  </Link>
+</div>
     
     <div className="border border-amber-700"></div>
     
@@ -39,9 +41,11 @@ export default function page() {
         <div className='bg-gray-100 h-[400px] p-2'>
           <h2 className="text-3xl font-normal mb-4">{t("civil.title", lang)}</h2>
     
-          <p className="leading-7 font-normal">
-{t("civil.description", lang)}
-    </p>
+       <p
+       className={`leading-7 font-normal ${  lang === "ar" ? "text-2xl" : ""  }`} >
+     {t("civil.description", lang)}
+     </p>
+
         </div>
     
         {/* IMAGE */}

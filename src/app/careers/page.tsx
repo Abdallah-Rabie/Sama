@@ -21,9 +21,9 @@ export default function page() {
   </div>
 
 <div className="w-[90%] mx-auto flex items-center gap-2 my-5 text-gray-400">
-  <Link href={"/"}>HOME</Link>
+  <Link href={"/"}>{t("nav.home", lang)}</Link>
   <span>/</span>
-  <Link href={""}>Careers</Link>
+  <Link href={""}>{t("nav.careers", lang)}</Link>
 </div>
 
 <div className="border border-amber-700"></div>

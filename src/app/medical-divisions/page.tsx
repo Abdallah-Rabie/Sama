@@ -36,15 +36,15 @@ export default function page() {
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
     {/* TEXT */}
-    <div className='bg-gray-100 h-full p-4'>
-      <h2 className="text-3xl font-normal mb-4">{t("medical.title", lang)}</h2>
+    <div className='bg-gray-100 h-full p-4 '>
+      <h2 className="text-3xl font-normal  ">{t("medical.title", lang)}</h2>
 
         <p className=" font-normal break-words text-lg">
 {t("medical.description", lang)}</p>
     </div>
 
     {/* IMAGE */}
-    <div className="relative w-full h-[250px] sm:h-full">
+    <div className="relative w-full h-[450px] sm:h-full">
       <Image src={logoo} alt="logo" fill className="object-cover rounded-xl"/>
     </div>
 
