@@ -69,10 +69,14 @@ const translations: Record<string, { en: string; ar: string }> = {
   "military.traffic": { en: "Intelligent traffic management", ar: "إدارة المرور الذكية" },
   "military.siteSecurity": { en: "Site security - fencing, barriers", ar: "أمن الموقع - سياج وحواجز" },
   "medical.title": { en: "Medical divisions", ar: "الأقسام الطبية" },
-  "medical.description": { en: "At Sama Holding, we deliver healthcare projects end-to-end—from planning and design to construction, commissioning, and operations—prioritizing patient safety, operational efficiency, and regulatory compliance. We work across hospitals, specialty centers, clinics, laboratories, and pharmacies, integrating medical and engineering systems for high readiness and service continuity.", ar: "في سما القابضة، نقدم مشاريع الرعاية الصحية من البداية إلى النهاية — من التخطيط والتصميم إلى البناء والتشغيل والتسليم — مع إعطاء الأولوية لسلامة المرضى وكفاءة العمليات والامتثال التنظيمي. نعمل في المستشفيات والمراكز التخصصية والعيادات والمختبرات والصيدليات، ونقوم بتكامل الأنظمة الطبية والهندسية لتحقيق جاهزية عالية واستمرارية تشغيلية."
-  },
-  "medical.extra": { en: "Sama is a leader in the supply of healthcare services and the distribution of medical consumables, as well as all products related to dialysis and dental industries within the Kingdom of Saudi Arabia. It represents well-known global and local companies to distribute a wide range of products and provide healthcare providers with the latest solutions and technologies, along with high-quality services.", ar: "سما رائدة في توريد خدمات الرعاية الصحية وتوزيع المستهلكات الطبية، وكذلك جميع المنتجات المتعلقة بالغسيل الكلوي وصناعات الأسنان داخل المملكة العربية السعودية. تمثل شركات عالمية ومحلية معروفة لتوزيع مجموعة واسعة من المنتجات وتقديم أحدث الحلول والتقنيات لمقدمي الرعاية الصحية، إلى جانب خدمات عالية الجودة."
-  },
+
+"medical.description": {
+  en: "At Sama Holding, we deliver healthcare projects end-to-end—from planning and design to construction, commissioning, and operations—prioritizing patient safety, operational efficiency, and regulatory compliance. We work across hospitals, specialty centers, clinics, laboratories, and pharmacies, integrating medical and engineering systems for high readiness and service continuity. We focus on: Evidence-based clinical flows (patient/staff/supply), infection control, and sterile zones. Specialized systems: medical gas networks, high-spec HVAC, operating and isolation rooms, imaging suites, clean rooms. Smart and low-current systems: nurse call, surveillance, BMS, and integration with HIS/PACS/LIS and data networks. Thorough commissioning, O&M plans, and technical support. Compliance with national and international standards (MoH, SFDA, NFPA, HTM) plus sustainability and energy efficiency.",
+  
+  ar: "في سما القابضة، نقدم مشاريع الرعاية الصحية من البداية إلى النهاية — من التخطيط والتصميم إلى البناء والتشغيل والتسليم — مع إعطاء الأولوية لسلامة المرضى وكفاءة العمليات والامتثال التنظيمي. نعمل في المستشفيات والمراكز التخصصية والعيادات والمختبرات والصيدليات، ونقوم بتكامل الأنظمة الطبية والهندسية لتحقيق جاهزية عالية واستمرارية تشغيلية. نركز على: تدفقات سريرية قائمة على الأدلة (المريض/الطاقم/الإمداد)، مكافحة العدوى والمناطق المعقمة. الأنظمة المتخصصة: شبكات الغازات الطبية، أنظمة التكييف عالية المواصفات، غرف العمليات والعزل، غرف التصوير، والغرف النظيفة. الأنظمة الذكية والضعيفة التيار: نداء الممرضات، المراقبة، نظام إدارة المباني (BMS)، والتكامل مع HIS/PACS/LIS وشبكات البيانات. أعمال التشغيل والتجهيز الشاملة، وخطط التشغيل والصيانة، والدعم الفني. الالتزام بالمعايير المحلية والدولية (وزارة الصحة، هيئة الغذاء والدواء، NFPA، HTM) إضافة إلى الاستدامة وكفاءة الطاقة."
+},
+
+  "medical.extra": { en: "Sama is a leader in the supply of healthcare services and the distribution of medical consumables, as well as all products related to dialysis and dental industries within the Kingdom of Saudi Arabia. It represents well-known global and local companies to distribute a wide range of products and provide healthcare providers with the latest solutions and technologies, along with high-quality services.", ar: "سما رائدة في توريد خدمات الرعاية الصحية وتوزيع المستهلكات الطبية، وكذلك جميع المنتجات المتعلقة بالغسيل الكلوي وصناعات الأسنان داخل المملكة العربية السعودية. تمثل شركات عالمية ومحلية معروفة لتوزيع مجموعة واسعة من المنتجات وتقديم أحدث الحلول والتقنيات لمقدمي الرعاية الصحية، إلى جانب خدمات عالية الجودة." },
   "medical.dialysisConsumables": { en: "Disposable consumables for dialysis procedures", ar: "المستهلكات القابلة للتصرف لإجراءات الغسيل الكلوي" },
   "medical.bicarbonate": { en: "UVital-Dura bicarbonate", ar: "يوفيتال-دورا بيكربونات" },
   "medical.dialysis": { en: "Dialysis", ar: "الغسيل الكلوي" },
@@ -161,11 +165,53 @@ const translations: Record<string, { en: string; ar: string }> = {
 
 "projects.infrastructureDesc": { en: "Infrastructure, bridges, tunnels and road systems...", ar: "البنية التحتية والجسور والأنفاق وأنظمة الطرق..."},
 
-"medical.thermalCameras": {
-  en: "Thermal cameras, autofocus cameras",
-  ar: "كاميرات حرارية وكاميرات ذات تركيز تلقائي"
-}
+"medical.thermalCameras": { en: "Thermal cameras, autofocus cameras", ar: "كاميرات حرارية وكاميرات ذات تركيز تلقائي"},
 
+"environment.title": { en: "Environment and Sustainability", ar: "البيئة والاستدامة",},
+
+"quality.productivity": { en: "Quality and Productivity", ar: "الجودة والإنتاجية",},
+
+"quality.title": { en: "Quality", ar: "الجودة",},
+
+"quality.description": {
+  en: "We are committed to achieving quality that exceeds standards in all our fields of work. We aim to achieve an exceptional level of excellence.",
+  ar: "نلتزم بتحقيق جودة تتجاوز المعايير في جميع مجالات عملنا، ونسعى للوصول إلى مستوى استثنائي من التميز.",
+},
+
+"productivity.speed": { en: "Productivity Speed", ar: "سرعة الإنتاجية",},
+
+"productivity.speed.description": {
+  en: "The key to Sama’s success is not shortcutting work, but creating the right conditions to complete timelines and plans in a timely manner.",
+  ar: "يكمن مفتاح نجاح سما في عدم اختصار العمل، بل في تهيئة الظروف المناسبة لإنجاز الجداول الزمنية والخطط في الوقت المحدد.",
+},
+
+"sustainability.description": {
+  en: "Sustainability is not just a part of our strategy; it is our identity. We are committed to being part of the solution in facing environmental challenges.",
+  ar: "الاستدامة ليست مجرد جزء من استراتيجيتنا، بل هي هويتنا. نحن ملتزمون بأن نكون جزءًا من الحل في مواجهة التحديات البيئية.",
+},
+
+"sustainability.details": {
+  en: "At Sama, we recognize that the future of business is not just about financial success, but also about preserving our planet. Therefore, we strive to implement green building standards by using sustainable materials and designs that emphasize energy efficiency. We focus on ensuring that our operations have minimal environmental impact. We are also committed to renewable energy sources and investing in solar energy technologies. We apply the best industrial practices to ensure production processes respect the environment and contribute to its preservation.",
+  ar: "في سما، ندرك أن مستقبل الأعمال لا يقتصر على النجاح المالي فحسب، بل يشمل أيضًا الحفاظ على كوكبنا. لذلك نسعى إلى تطبيق معايير البناء الأخضر من خلال استخدام مواد وتصميمات مستدامة تركز على كفاءة الطاقة. نحرص على أن يكون لعملياتنا أقل تأثير ممكن على البيئة، كما نلتزم بالاعتماد على مصادر الطاقة المتجددة والاستثمار في تقنيات الطاقة الشمسية. ونطبق أفضل الممارسات الصناعية لضمان أن تحترم عمليات الإنتاج البيئة وتسهم في الحفاظ عليها.",
+},
+
+"civil.division": {en: "Civil Division", ar: "القسم المدني",},
+
+"projects.royalCommission.title": { en: "Royal Commission for Jubail and Yanbu", ar: "الهيئة الملكية للجبيل وينبع",},
+
+"projects.royalCommission.description": {  en: "Electrical installations, roads and bridges...", ar: "الأعمال الكهربائية، والطرق والجسور...",},
+
+"projects.jeddahStadium.title": { en: "Jeddah Stadium Project",  ar: "مشروع استاد جدة",},
+
+"projects.jeddahStadium.description": {
+  en: "Jeddah Stadium Project with FIFA specs, retractable roof, cooling for stands, 36", ar: "مشروع استاد جدة بمواصفات فيفا، سقف متحرك، تبريد للمدرجات، 36",},
+
+  "projects.tunnelsBridges.title": { en: "Tunnels and Bridges Works", ar: "أعمال الأنفاق والجسور"},
+
+  "projects.tunnelsBridges.desc": {
+  en: "Tunnels and bridges works, storm water protection systems, historical and coastal development", ar: "أعمال الأنفاق والجسور، أنظمة حماية مياه الأمطار، التطوير التاريخي والساحلي"},
+
+ "nav.civilDivision": { en: "Civil division", ar: "قسم المدني"},
 }
 export function t(key: string, lang: Language) {
   return translations[key]?.[lang] ?? key;
